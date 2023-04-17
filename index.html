@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/confetti.js" defer></script>
+
+    <title>Typing Speed Test</title>
+  </head>
+  <body>
+    <div class="main-title">typing speed test game</div>
+    <div class="game">
+      <div class="info">
+        you are playing on
+        <select class="level">
+          <option value="Easy">easy</option>
+          <option value="Normal" >normal</option>
+          <option value="Hard">hard</option>
+        </select>
+        level & you have
+        <span class="seconds">5</span>
+        seconds to type the word
+      </div>
+      <div class="start">start game</div>
+      <div class="random-word"></div>
+      <input
+        class="typing-area"
+        disabled
+        type="text"
+        placeholder="Click Start Game To Play"
+      />
+      <div class="up-comingWords"></div>
+      <div class="stats">
+        <span class="time">
+          time left
+          <span>-2</span>
+          seconds
+        </span>
+        <span class="score-stats">
+          score
+          <span class="score">0</span>
+          from
+          <span class="goal"></span>
+        </span>
+      </div>
+    </div>
+    <a href="#" class="reload">Reload</a>
+    <audio id="success" src="sound/success_sound.mp3" preload="auto"></audio>
+  </body>
+</html>

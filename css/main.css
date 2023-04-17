@@ -1,0 +1,127 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ddd;
+  min-height: 100vh;
+  user-select: none;
+}
+.main-title {
+  padding: 1.2rem;
+  background-color: var(--main-color);
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.game {
+  margin: 20px auto;
+  width: 900px;
+}
+.info {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.info .level {
+  padding: .3rem;
+}
+.info .level,
+.info .seconds {
+  color: red;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.info .level::before,
+.info .seconds::before {
+  content: "[";
+}
+.info .level::after,
+.info .seconds::after {
+  content: "]";
+}
+.start {
+  margin: 1rem 0;
+  background-color: #4caf50;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.random-word {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  display: none;
+}
+.random-word.show {
+  display: block;
+}
+.typing-area {
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: 3px solid var(--main-color);
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  caret-color: var(--main-color);
+}
+.typing-area:focus {
+  outline: none;
+}
+.up-comingWords {
+  background-color: white;
+  padding: 1rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  display: none;
+}
+.up-comingWords.show {
+  display: flex;
+}
+.up-comingWords > div {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem auto;
+}
+.stats .time span,
+.score,
+.goal {
+  color: #4caf50;
+  font-weight: bold;
+}
+.reload {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+}
